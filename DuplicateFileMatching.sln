@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateFileMatching.ConsoleApp", "DuplicateFileMatching.ConsoleApp\DuplicateFileMatching.ConsoleApp.csproj", "{A5B31073-9A7E-4235-92A3-4989E2383A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateFileMatching.Core", "DuplicateFileMatching.Core\DuplicateFileMatching.Core.csproj", "{27ECF901-8C6D-4578-AC61-3FF282E124DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateFileMatching.Test", "DuplicateFileMatching.Test\DuplicateFileMatching.Test.csproj", "{28A3910B-CF1D-4853-8979-750C354B9DCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5B31073-9A7E-4235-92A3-4989E2383A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B31073-9A7E-4235-92A3-4989E2383A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B31073-9A7E-4235-92A3-4989E2383A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B31073-9A7E-4235-92A3-4989E2383A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27ECF901-8C6D-4578-AC61-3FF282E124DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27ECF901-8C6D-4578-AC61-3FF282E124DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27ECF901-8C6D-4578-AC61-3FF282E124DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27ECF901-8C6D-4578-AC61-3FF282E124DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A3910B-CF1D-4853-8979-750C354B9DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A3910B-CF1D-4853-8979-750C354B9DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A3910B-CF1D-4853-8979-750C354B9DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A3910B-CF1D-4853-8979-750C354B9DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
