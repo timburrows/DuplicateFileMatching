@@ -1,4 +1,5 @@
 ﻿using System;
+using DuplicateFileMatching.Core;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DuplicateFileMatching.ConsoleApp
@@ -20,7 +21,9 @@ namespace DuplicateFileMatching.ConsoleApp
         private static void Init()
         {
             var services = new ServiceCollection()
-                .AddSingleton<IAppHost, AppHost>();
+                .AddSingleton<IAppHost, AppHost>()
+                .AddTransient<IImageManipulation, ImageManipulation>()
+                .AddTransient<IImageComparison, ImageComparison>();
             
             _serviceProvider = services.BuildServiceProvider(true);
         }

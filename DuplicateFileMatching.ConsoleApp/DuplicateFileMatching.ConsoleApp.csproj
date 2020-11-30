@@ -10,4 +10,8 @@
       <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DuplicateFileMatching.Core\DuplicateFileMatching.Core.csproj" />
+    </ItemGroup>
+
 </Project>
