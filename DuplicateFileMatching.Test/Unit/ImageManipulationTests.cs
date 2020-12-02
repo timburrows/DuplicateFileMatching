@@ -9,7 +9,7 @@ namespace DuplicateFileMatching.Test.Unit
 {
     public class ImageManipulationTests
     {
-        private readonly IImageManipulation _sut = new ImageManipulation();
+        private readonly IBitmapManipulation _sut = new BitmapManipulation();
         
         [Theory]
         [InlineData("AspectRatioDisproportionate", "/Dec 2016/scary bear.JPG", 24, 16)]
@@ -31,7 +31,7 @@ namespace DuplicateFileMatching.Test.Unit
         [InlineData("/Dec 2016/scary bear.JPG", true, true)]
         [InlineData("/Dec 2016/scary bear.JPG", false, false)]
         [InlineData("/germany/staring contest.jpg", true, true)]
-        private void ToBlackAndWhite_PixelsAreCorrectColor(string imagePath, bool isImageConverted, bool expectedResult)
+        private void ToGreyscale_PixelsAreCorrectColor(string imagePath, bool isImageConverted, bool expectedResult)
         {
             // Arrange
             var testBmp = Image.FromFile($"{Directory.GetCurrentDirectory()}/TestImages/{imagePath}") as Bitmap;

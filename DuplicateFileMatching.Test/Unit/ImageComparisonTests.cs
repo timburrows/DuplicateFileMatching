@@ -9,7 +9,7 @@ namespace DuplicateFileMatching.Test.Unit
 {
     public class ImageComparisonTests
     {
-        private readonly IImageComparison _sut = new ImageComparison();
+        private readonly IBitmapComparison _sut = new BitmapComparison();
 
         [Theory]
         [InlineData("Dec 2016/scary bear.JPG", "Dec 2016/scary bear.JPG", true)]

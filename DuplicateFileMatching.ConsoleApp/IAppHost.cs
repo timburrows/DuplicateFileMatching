@@ -2,6 +2,6 @@ namespace DuplicateFileMatching.ConsoleApp
 {
     public interface IAppHost
     {
-        void Run();
+        void Run(string[] args);
     }
 }

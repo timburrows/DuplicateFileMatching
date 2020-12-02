@@ -13,7 +13,7 @@ namespace DuplicateFileMatching.ConsoleApp
             Init();
             
             var scope = _serviceProvider.CreateScope();
-            scope.ServiceProvider.GetRequiredService<IAppHost>().Run();
+            scope.ServiceProvider.GetRequiredService<IAppHost>().Run(args);
             
             Dispose();
         }
@@ -22,8 +22,9 @@ namespace DuplicateFileMatching.ConsoleApp
         {
             var services = new ServiceCollection()
                 .AddSingleton<IAppHost, AppHost>()
-                .AddTransient<IImageManipulation, ImageManipulation>()
-                .AddTransient<IImageComparison, ImageComparison>();
+                .AddTransient<IBitmapManipulation, BitmapManipulation>()
+                .AddTransient<IBitmapComparison, BitmapComparison>()
+                .AddTransient<IFileService, FileService>();
             
             _serviceProvider = services.BuildServiceProvider(true);
         }

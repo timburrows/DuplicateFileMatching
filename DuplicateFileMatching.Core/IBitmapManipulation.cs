@@ -2,7 +2,7 @@ using System.Drawing;
 
 namespace DuplicateFileMatching.Core
 {
-    public interface IImageManipulation
+    public interface IBitmapManipulation
     {
         /// <summary>
         /// Shrinks an Image to the smallest possible aspect ratio. (Min width/height = 16)
@@ -10,18 +10,18 @@ namespace DuplicateFileMatching.Core
         /// <param name="path">Absolute path to the image file</param>
         /// <returns>A new Bitmap with the relevant size adjustments</returns>
         Bitmap ShrinkImage(string path);
-        
+
         /// <summary>
         /// Shrinks an Image to the smallest possible aspect ratio. (Min width/height = 16)
         /// </summary>
-        /// <param name="img">An Image object with the loaded image file</param>
+        /// <param name="bmp">An Image object with the loaded image file</param>
         /// <returns>A new Bitmap with the relevant size adjustments</returns>
-        Bitmap ShrinkImage(Image img);
-        
+        Bitmap ShrinkImage(Bitmap bmp);
+
         /// <summary>
         /// Converts a Bitmap to it's Greyscale Equivalent
         /// </summary>
-        /// <param name="img">The original Bitmap to execute the conversion on</param>
-        Bitmap ToGreyscale(Image img);
+        /// <param name="bmp">The original Bitmap to execute the conversion on</param>
+        Bitmap ToGreyscale(Bitmap bmp);
     }
 }
